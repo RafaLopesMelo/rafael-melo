@@ -1,29 +1,31 @@
-"use client";
+'use client';
 
-import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-import { usePathname } from "next/navigation";
+import * as NavigationMenu from '@radix-ui/react-navigation-menu';
+
+import { usePathname } from 'next/navigation';
+import { Avatar } from '../avatar';
 
 const menus = [
     {
-        name: "About",
-        link: "/",
-        active: "/",
+        name: 'About',
+        link: '/',
+        active: '/'
     },
     {
-        name: "Studies",
-        link: "/studies",
-        active: "/studies",
+        name: 'Studies',
+        link: '/studies',
+        active: '/studies'
     },
     {
-        name: "Articles",
-        link: "/articles",
-        active: "/articles",
+        name: 'Articles',
+        link: '/articles',
+        active: '/articles'
     },
     {
-        name: "Contact",
-        link: "contact",
-        active: "/contact",
-    },
+        name: 'Contact',
+        link: 'contact',
+        active: '/contact'
+    }
 ];
 
 export const Header = () => {
@@ -31,8 +33,10 @@ export const Header = () => {
 
     return (
         <div className="top-0 z-10 flex items-center justify-center pt-6">
-            <div className="flex-1"></div>
-            <NavigationMenu.Root className="flex-1">
+            <div className="flex-1">
+                <Avatar src="/img/me.webp" fallback="RM" alt="Rafael Melo" />
+            </div>
+            <NavigationMenu.Root>
                 <NavigationMenu.List className="flex rounded-full bg-white/90 px-3 text-sm font-medium  shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
                     {menus.map((menu) => {
                         const isActive = menu.active === pathname;
