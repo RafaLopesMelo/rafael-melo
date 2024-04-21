@@ -16,15 +16,15 @@ export default function RootTemplate({
 }>) {
     return (
         <main className="flex min-h-screen dark:bg-black">
-            <div className="mx-auto max-w-7xl w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 sm:px-8">
-                <div className="mx-auto lg:px-16">
+            <div className="mx-auto max-w-7xl w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 sm:px-8 pb-16">
+                <div className="mx-auto px-5 lg:px-16">
                     <Header />
                     <motion.div
                         variants={variants}
                         initial="hidden"
                         animate="enter"
                         transition={{ type: 'just' }}
-                        className="mt-16"
+                        className="mt-[8rem]"
                     >
                         {children}
                     </motion.div>

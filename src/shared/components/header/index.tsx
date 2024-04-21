@@ -45,12 +45,12 @@ export const Header = () => {
                             <NavigationMenu.Item key={menu.link}>
                                 <NavigationMenu.Link
                                     data-active={isActive}
-                                    className="relative block text-zinc-800 dark:text-zinc-200 px-3 py-2 data-[active='true']:text-teal-400 dark:data-[active='true']:text-teal-400"
+                                    className="relative block text-zinc-800 dark:text-zinc-200 px-3 py-2 data-[active='true']:text-main-400 dark:data-[active='true']:text-main-400"
                                     href={menu.link}
                                 >
                                     {menu.name}
                                     {isActive ? (
-                                        <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
+                                        <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-main-500/0 via-main-500/40 to-main-500/0 dark:from-main-400/0 dark:via-main-400/40 dark:to-main-400/0"></span>
                                     ) : (
                                         <></>
                                     )}
