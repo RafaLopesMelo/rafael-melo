@@ -1,6 +1,6 @@
-import { Text } from '@/shared/components/text';
+import { Text } from '../text';
 
-export const ArticlesGrid = () => {
+export const ComingSoon = () => {
     return (
         <div className="relative">
             <div className="flex items-center justify-center absolute w-full h-full bg-gradient-to-b from-transparent to-90% to-zinc-900">

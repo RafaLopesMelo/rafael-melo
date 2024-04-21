@@ -22,9 +22,9 @@ const menus = [
         active: '/articles'
     },
     {
-        name: 'Contact',
-        link: 'contact',
-        active: '/contact'
+        name: 'Projects',
+        link: 'projects',
+        active: '/projects'
     }
 ];
 
