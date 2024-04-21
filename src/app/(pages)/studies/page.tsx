@@ -7,10 +7,7 @@ export default async function Studies() {
 
     return (
         <>
-            <Heading
-                as="h2"
-                className="text-4xl md:text-5xl font-bold tracking-wide"
-            >
+            <Heading as="h2" className="text-4xl font-bold tracking-wide">
                 📚 What I&apos;m learning
             </Heading>
             <div className="mt-20"></div>
