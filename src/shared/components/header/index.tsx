@@ -32,7 +32,7 @@ export const Header = () => {
     const pathname = usePathname();
 
     return (
-        <div className="top-0 z-10 flex items-center justify-center pt-6">
+        <header className="top-0 z-10 flex items-center justify-center pt-6">
             <div className="flex-1">
                 <Avatar src="/img/me.webp" fallback="RM" alt="Rafael Melo" />
             </div>
@@ -61,6 +61,6 @@ export const Header = () => {
                 </NavigationMenu.List>
             </NavigationMenu.Root>
             <div className="flex-1"></div>
-        </div>
+        </header>
     );
 };

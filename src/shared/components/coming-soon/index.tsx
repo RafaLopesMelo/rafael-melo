@@ -8,8 +8,8 @@ export const ComingSoon = () => {
                     Under progress...
                 </Text>
             </div>
-            <div className="grid grid-cols-3 gap-10">
-                {Array.from({ length: 6 }).map((_, i) => (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+                {Array.from({ length: 4 }).map((_, i) => (
                     <div
                         key={i}
                         className="w-100 h-60 rounded-md bg-zinc-800/20"
