@@ -7,7 +7,7 @@ import { Avatar } from '../avatar';
 
 const menus = [
     {
-        name: 'About',
+        name: 'Home',
         link: '/',
         active: '/'
     },
@@ -25,6 +25,11 @@ const menus = [
         name: 'Projects',
         link: 'projects',
         active: '/projects'
+    },
+    {
+        name: 'About',
+        link: '/about',
+        active: '/about'
     }
 ];
 
