@@ -26,7 +26,7 @@ export default function RootTemplate({
                             initial="hidden"
                             animate="enter"
                             transition={{ type: 'just' }}
-                            className="mt-[8rem]"
+                            className="mt-[3rem] md:mt-[8rem]"
                         >
                             {children}
                         </motion.main>

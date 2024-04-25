@@ -38,11 +38,11 @@ export const Header = () => {
 
     return (
         <header className="top-0 z-10 flex items-center justify-center pt-6">
-            <div className="flex-1">
+            <div className="hidden md:block flex-1">
                 <Avatar src="/img/me.webp" fallback="RM" alt="Rafael Melo" />
             </div>
             <NavigationMenu.Root>
-                <NavigationMenu.List className="flex rounded-full bg-white/90 px-3 text-sm font-medium  shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
+                <NavigationMenu.List className="flex flex-wrap justify-center rounded-full bg-white/90 px-3 text-sm font-medium  shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
                     {menus.map((menu) => {
                         const isActive = menu.active === pathname;
 

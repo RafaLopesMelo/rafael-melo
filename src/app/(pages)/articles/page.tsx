@@ -8,7 +8,7 @@ export default function Articles() {
                 ✍🏼 What I&apos;m writing
             </Heading>
             <div className="mt-20"></div>
-            <ComingSoon />
+            <ComingSoon lines={2} perLine={4} />
         </>
     );
 }

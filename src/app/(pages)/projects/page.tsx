@@ -8,7 +8,7 @@ export default function Projects() {
                 🛠️ What I&apos;m working
             </Heading>
             <div className="mt-20"></div>
-            <ComingSoon />
+            <ComingSoon lines={2} perLine={4} />
         </>
     );
 }

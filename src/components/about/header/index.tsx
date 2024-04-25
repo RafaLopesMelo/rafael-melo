@@ -1,4 +1,4 @@
-import { Technologies } from '@/components/home/technologies';
+import { Technologies } from '@/components/about/technologies';
 import { Heading } from '@/shared/components/heading';
 import { Paragraph } from '@/shared/components/paragraph';
 
@@ -23,7 +23,7 @@ export const AboutHeader = () => {
                 <img
                     src="/img/me_2.webp"
                     alt="Rafael Melo"
-                    className="w-80 h-80 rounded-full"
+                    className="w-60 h-60 md:w-80 md:h-80 rounded-full"
                 />
             </div>
         </div>
