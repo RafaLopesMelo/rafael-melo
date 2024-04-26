@@ -17,8 +17,8 @@ export default function RootTemplate({
 }>) {
     return (
         <div className="flex min-h-screen dark:bg-black">
-            <div className="mx-auto max-w-7xl w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
-                <div className="sm:px-8">
+            <div className="mx-auto max-w-7xl w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 flex flex-col">
+                <div className="sm:px-8 grow">
                     <div className="mx-auto px-5 lg:px-16">
                         <Header />
                         <motion.main

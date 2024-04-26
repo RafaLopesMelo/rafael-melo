@@ -18,14 +18,17 @@ export const ComingSoon = ({ lines, perLine }: ComingSoonProps) => {
     return (
         <div className="relative">
             <div className="flex items-center justify-center absolute w-full h-full bg-gradient-to-b from-transparent to-90% to-zinc-900">
-                <Text as="span" className="text-4xl font-bold text-center">
+                <Text
+                    as="span"
+                    className="text-2xl md:text-4xl font-bold text-center"
+                >
                     Under progress...
                 </Text>
             </div>
             <div
                 className={`grid ${
                     gridColsClassNames[perLine - 1]
-                } sm:grid-cols-2 grid-cols-1 gap-10`}
+                } sm:grid-cols-2 grid-cols-1 gap-10 max-h-40 md:max-h-none overflow-hidden`}
             >
                 {Array.from({ length: elementsCount }).map((_, i) => (
                     <div
