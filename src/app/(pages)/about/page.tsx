@@ -8,7 +8,7 @@ export default function About() {
 
             <div className="mt-16">
                 <Paragraph>
-                    Hi, I'm Rafael Melo, a full-stack software engineer
+                    Hi, I&apos;m Rafael Melo, a full-stack software engineer
                     specialized in back-end development, proficient in NodeJS,
                     React/NextJS, and PHP.
                 </Paragraph>
