@@ -1,9 +1,9 @@
-import Link from 'next/link';
 import { IoChevronForward } from 'react-icons/io5';
 
 import { Heading } from '@/shared/components/heading';
 import { Paragraph } from '@/shared/components/paragraph';
 import { Text } from '@/shared/components/text';
+import { Link } from '@/shared/components/Link';
 
 type StudyItemProps = {
     title: string;
@@ -47,7 +47,7 @@ export const StudyItem = (props: StudyItemProps) => {
                 <Link
                     data-disabled={props.articles.length === 0}
                     href="#"
-                    className="flex items-center font-medium text-main-500 gap-1 data-[disabled='true']:cursor-not-allowed data-[disabled='true']:opacity-70"
+                    className="flex items-center gap-1"
                 >
                     Read articles
                     <IoChevronForward className="text-xs" />

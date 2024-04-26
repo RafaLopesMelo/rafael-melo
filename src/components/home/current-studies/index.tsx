@@ -1,8 +1,8 @@
+import { Link } from '@/shared/components/Link';
 import { Heading } from '@/shared/components/heading';
 import { Paragraph } from '@/shared/components/paragraph';
 import { Text } from '@/shared/components/text';
 import { ListStudies } from '@/shared/services/studies/list';
-import Link from 'next/link';
 import { IoChevronForward } from 'react-icons/io5';
 
 type StudyItemProps = {
@@ -29,7 +29,7 @@ const StudyItem = (props: StudyItemProps) => {
             </Text>
             <div className="flex items-end">
                 <Link
-                    className="text-main-400 hover:text-main-500 ml-auto flex items-center mt-2"
+                    className="ml-auto flex items-center mt-2"
                     href="/studies"
                 >
                     See more

@@ -1,4 +1,5 @@
 import { AboutHeader } from '@/components/about/header';
+import { Link } from '@/shared/components/Link';
 import { Paragraph } from '@/shared/components/paragraph';
 
 export default function About() {
@@ -16,10 +17,10 @@ export default function About() {
                 <Paragraph>
                     Throughout my career, I&apos;ve primarily worked in a
                     startup called{' '}
-                    <a href="https://curseduca.com" target="_blank">
+                    <Link href="https://curseduca.com" target="_blank">
                         Curseduca
-                    </a>{' '}
-                    which is a platform that able content creators to delivery
+                    </Link>{' '}
+                    which is a platform that able content creators to deliver
                     their content to their students.
                     <br />
                     Within this startup environment, I&apos;ve engaged with
@@ -37,9 +38,12 @@ export default function About() {
 
                 <Paragraph>
                     I&apos;m also an active member of{' '}
-                    <a href="https://www.campinhodigital.org/" target="_blank">
+                    <Link
+                        href="https://www.campinhodigital.org/"
+                        target="_blank"
+                    >
                         Campinho Digital
-                    </a>
+                    </Link>
                     , a community dedicated to assisting underprivileged youth
                     in entering the job market through technology.
                 </Paragraph>
