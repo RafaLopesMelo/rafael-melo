@@ -3,7 +3,7 @@ import { Paragraph } from '@/shared/components/paragraph';
 import { Text } from '@/shared/components/text';
 import { ListStudies } from '@/shared/services/studies/list';
 import Link from 'next/link';
-import { IoCaretForward, IoChevronForward } from 'react-icons/io5';
+import { IoChevronForward } from 'react-icons/io5';
 
 type StudyItemProps = {
     title: string;
@@ -53,7 +53,7 @@ export const CurrentStudies = async () => {
                     Current studies
                 </Heading>
                 <Paragraph className="text-lg text-zinc-600 dark:text-zinc-400 mb-0">
-                    What I'm currently learning
+                    What I&apos;m currently learning
                 </Paragraph>
             </div>
             <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">

@@ -10,7 +10,7 @@ export const CurrentProjects = () => {
                     Current projects
                 </Heading>
                 <Paragraph className="text-lg text-zinc-600 dark:text-zinc-400 mb-0">
-                    What I'm currently working on
+                    What I&apos;m currently working on
                 </Paragraph>
             </div>
             <ComingSoon lines={1} perLine={3} />
