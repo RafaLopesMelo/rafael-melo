@@ -14,29 +14,29 @@ export default function About() {
                 </Paragraph>
 
                 <Paragraph>
-                    Throughout my career, I've primarily worked in a startup
-                    called{' '}
+                    Throughout my career, I&apos;ve primarily worked in a
+                    startup called{' '}
                     <a href="https://curseduca.com" target="_blank">
                         Curseduca
                     </a>{' '}
                     which is a platform that able content creators to delivery
                     their content to their students.
                     <br />
-                    Within this startup environment, I've engaged with various
-                    technologies, including NodeJS and PHP for back-end
+                    Within this startup environment, I&apos;ve engaged with
+                    various technologies, including NodeJS and PHP for back-end
                     operations, as well as ReactJS and NextJS for front-end
-                    development. Additionally, I've utilized DevOps tools like
-                    Docker and AWS.
+                    development. Additionally, I&apos;ve utilized DevOps tools
+                    like Docker and AWS.
                     <br />
-                    At Curseduca I'm responsible to deliver new features, fix
-                    bugs, create internal tooling and also to help the team to
-                    improve the code quality. Furthermore I'm responsible to
-                    organize and minister internal workshops to help the team to
-                    improve their skills.
+                    At Curseduca I&apos;m responsible to deliver new features,
+                    fix bugs, create internal tooling and also to help the team
+                    to improve the code quality. Furthermore I&apos;m
+                    responsible to organize and minister internal workshops to
+                    help the team to improve their skills.
                 </Paragraph>
 
                 <Paragraph>
-                    I'm also an active member of{' '}
+                    I&apos;m also an active member of{' '}
                     <a href="https://www.campinhodigital.org/" target="_blank">
                         Campinho Digital
                     </a>
