@@ -52,7 +52,7 @@ const icons: { title: string; icon: string }[] = [
 export const Technologies = () => {
     return (
         <div className="w-full max-w-[520px] rounded bg-main-400/[0.03] p-3">
-            <div className="grid grid-cols-6 gap-4">
+            <div className="grid grid-cols-4 md:grid-cols-6 gap-4">
                 {icons.map((icon, index) => (
                     <div
                         key={index}
