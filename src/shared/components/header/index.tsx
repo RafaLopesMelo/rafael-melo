@@ -65,7 +65,7 @@ export const Header = () => {
                     })}
                 </NavigationMenu.List>
             </NavigationMenu.Root>
-            <div className="flex-1"></div>
+            <div className="flex-1 hidden md:block"></div>
         </header>
     );
 };
