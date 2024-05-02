@@ -8,6 +8,18 @@ type OutputFindArticleBySlugDto = {
     content: string;
 } | null;
 
+const getContent = (filename: string) => {
+    const completePath = path.join(
+        process.cwd(),
+        'public',
+        'assets',
+        'articles',
+        'contents',
+        filename
+    );
+    return readFile(completePath, 'utf-8');
+};
+
 export const FindArticleBySlug = async (
     slug: string
 ): Promise<OutputFindArticleBySlugDto> => {
@@ -20,8 +32,13 @@ export const FindArticleBySlug = async (
     if (!file) return null;
 
     const filePath = path.join(articlesDir, file);
-    const content = await readFile(filePath, 'utf-8');
-    const data = { ...JSON.parse(content), slug };
+    const stringifiedProps = await readFile(filePath, 'utf-8');
+    const parsedProps = JSON.parse(stringifiedProps);
+    const data = {
+        ...parsedProps,
+        slug,
+        content: await getContent(parsedProps.content)
+    };
 
     return data;
 };
