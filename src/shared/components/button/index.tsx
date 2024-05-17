@@ -18,7 +18,7 @@ export const Button = ({ as, children, ...props }: ButtonProps) => {
     return (
         <Tag
             {...typedProps}
-            className="bg-zinc-50 hover:bg-zinc-100 text-zinc-800 px-6 py-2 rounded-full font-medium"
+            className="bg-zinc-100 hover:bg-zinc-200 text-zinc-800 px-10 py-2 rounded-full font-medium"
         >
             {children}
         </Tag>
