@@ -9,6 +9,9 @@ type OutputListArticlesDto = {
         title: string;
         slug: string;
         description: string;
+        image: string;
+        category: string;
+        createdAt: Date;
     }[];
 };
 
@@ -25,14 +28,17 @@ export const ListArticles = async (): Promise<OutputListArticlesDto> => {
         const content = await readFile(file, 'utf-8');
 
         const slug = path.basename(file, '.json');
+        const parsed = JSON.parse(content);
 
-        data.push({ ...JSON.parse(content), slug });
+        data.push({ ...parsed, createdAt: new Date(parsed.createdAt), slug });
     }
 
     return {
         metadata: {
             totalCount: files.length
         },
-        data
+        data: data.sort((a, b) =>
+            (a.createdAt as Date) > (b.createdAt as Date) ? -1 : 1
+        )
     } as OutputListArticlesDto;
 };

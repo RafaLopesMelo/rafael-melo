@@ -49,16 +49,19 @@ export const ArticleDisplay = ({ article }: ArticleDisplayProps) => {
     return (
         <>
             <header className="text-center relative max-w-3xl mx-auto py-4">
-                <div className="h-[90%] hidden lg:block pattern left-0 -translate-x-full opacity-20 w-[200px]"></div>
-                <div className="h-[90%] hidden lg:block pattern right-0 translate-x-full opacity-20 w-[200px]"></div>
+                <div className="h-[90%] hidden xl:block pattern left-0 -translate-x-full opacity-20 w-[200px]"></div>
+                <div className="h-[90%] hidden xl:block pattern right-0 translate-x-full opacity-20 w-[200px]"></div>
                 <AnimatedDiv
-                    className="w-48 mx-auto pb-5 lg:pb-10 drop-shadow-2xl"
+                    className="w-48 mx-auto pb-5 lg:pb-10 drop-shadow-[0_25px_25px_rgba(255,255,255,0.15)]"
                     delay={50}
                 >
                     <img src={article.image} />
                 </AnimatedDiv>
-                <AnimatedDiv delay={150}>
-                    <Heading className="text-4xl font-bold text-center" as="h1">
+                <AnimatedDiv delay={150} className="flex flex-col items-center">
+                    <Heading
+                        className="text-3xl md:text-4xl font-bold text-center md:max-w-[80%]"
+                        as="h1"
+                    >
                         {article.title}
                     </Heading>
 

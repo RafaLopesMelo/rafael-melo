@@ -9,3 +9,7 @@
     background-size: 25px;
     top: 0;
 }
+
+.katex-display {
+    color: white;
+}

@@ -1,8 +1,12 @@
-import { ComingSoon } from '@/shared/components/coming-soon';
+import { ArticleItem } from '@/components/articles/item';
+import { Button } from '@/shared/components/button';
 import { Heading } from '@/shared/components/heading';
 import { Paragraph } from '@/shared/components/paragraph';
+import { ListArticles } from '@/shared/services/articles/list';
 
-export const LastArticles = () => {
+export const LastArticles = async () => {
+    const articles = await ListArticles();
+
     return (
         <section>
             <div className="mb-4">
@@ -13,7 +17,17 @@ export const LastArticles = () => {
                     What I&apos;ve been writing
                 </Paragraph>
             </div>
-            <ComingSoon lines={1} perLine={3} />
+            <div className="grid md:grid-cols-3">
+                {articles.data.slice(0, 3).map((article) => (
+                    <ArticleItem article={article} />
+                ))}
+            </div>
+
+            <div className="flex items-center justify-center mt-8">
+                <Button as="a" href="/articles">
+                    See all articles
+                </Button>
+            </div>
         </section>
     );
 };
