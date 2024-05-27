@@ -19,7 +19,7 @@ export const LastArticles = async () => {
             </div>
             <div className="grid md:grid-cols-4">
                 {articles.data.slice(0, 3).map((article) => (
-                    <ArticleItem article={article} />
+                    <ArticleItem key={article.slug} article={article} />
                 ))}
             </div>
 

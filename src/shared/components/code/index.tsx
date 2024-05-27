@@ -11,10 +11,11 @@ export const Code = ({ children, className, ...props }: CodeProps) => {
         <SyntaxHighlighter
             {...props}
             PreTag="div"
-            children={String(children).replace(/\n$/, '')}
             language={match[1]}
             style={atomDark}
-        />
+        >
+            {String(children).replace(/\n$/, '')}
+        </SyntaxHighlighter>
     ) : (
         <code
             className={twMerge(
