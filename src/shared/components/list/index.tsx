@@ -38,7 +38,7 @@ export const UnorderedList = ({
     ...props
 }: UnorderedListProps) => {
     return (
-        <ul className={twMerge('list-decimal', className)} {...props}>
+        <ul className={twMerge('list-disc', className)} {...props}>
             {children}
         </ul>
     );
