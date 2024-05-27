@@ -11,6 +11,7 @@ import { Paragraph } from '../../paragraph';
 import { Heading } from '../../heading';
 import { Code } from '../../code';
 import { Blockquote } from '../../blockquote';
+import { ListItem, OrderedList, UnorderedList } from '../../list';
 
 type MarkdownDisplayProps = {
     content: string;
@@ -51,6 +52,15 @@ export const MarkdownDisplay = ({ content }: MarkdownDisplayProps) => {
                 ),
                 blockquote: (props: React.HTMLAttributes<HTMLQuoteElement>) => (
                     <Blockquote {...props} />
+                ),
+                li: (props: React.HTMLAttributes<HTMLLIElement>) => (
+                    <ListItem {...props} />
+                ),
+                ol: (props: React.HTMLAttributes<HTMLOListElement>) => (
+                    <OrderedList {...props} />
+                ),
+                ul: (props: React.HTMLAttributes<HTMLUListElement>) => (
+                    <UnorderedList {...props} />
                 )
             }}
         >
