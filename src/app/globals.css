@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pattern {
+    filter: invert(100%);
+    position: absolute;
+    background: url(/img/pattern.png) repeat;
+    background-size: 25px;
+    top: 0;
+}
+
+.katex-display {
+    color: white;
+}

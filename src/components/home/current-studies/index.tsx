@@ -48,7 +48,7 @@ export const CurrentStudies = async () => {
 
     return (
         <section>
-            <div className="mb-4">
+            <div className="mb-6">
                 <Heading as="h3" className="text-3xl font-medium">
                     Current studies
                 </Heading>
