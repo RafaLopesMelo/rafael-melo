@@ -14,6 +14,7 @@ import { Code } from '../../code';
 import { Blockquote } from '../../blockquote';
 import { ListItem, OrderedList, UnorderedList } from '../../list';
 import { Table } from '../../table';
+import { Link } from '../../Link';
 
 type MarkdownDisplayProps = {
     content: string;
@@ -27,6 +28,9 @@ export const MarkdownDisplay = ({ content }: MarkdownDisplayProps) => {
             components={{
                 p: (props: React.HtmlHTMLAttributes<HTMLParagraphElement>) => (
                     <Paragraph className="text-pretty" {...props} />
+                ),
+                a: (props: React.HtmlHTMLAttributes<HTMLAnchorElement>) => (
+                    <Link className="text-pretty" {...props} />
                 ),
                 h1: (props: React.HtmlHTMLAttributes<HTMLHeadingElement>) => (
                     <Heading
