@@ -126,7 +126,7 @@ func NewStack() *Stack {
 -   The `Size` method returns the current size of the rod in number of elements
 -   The `NewStack` function creates a rod
 
-Now that we have each rod representation, it's time to implement the structure that we'll represent the entire structure of towers:
+Now that we have each rod representation, it's time to implement the structure that will represent the entire structure of towers:
 
 ```go
 // towers.go
