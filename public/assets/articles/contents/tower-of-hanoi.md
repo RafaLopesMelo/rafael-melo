@@ -33,7 +33,7 @@ Well, here are a few reasons:
 
 ## Logical Reasoning
 
-This is probably the most common reason why you should truly understand the Tower of Hanoi. Learning how it works will improve your capacity if logical reasoning and problem resolution.
+This is probably the most common reason why you should truly understand the Tower of Hanoi. Learning how it works will improve your capacity for logical reasoning and problem resolution.
 
 Besides that, the algorithm that resolves the puzzle uses techniques that are essentials when it comes to how to resolve complex problems using code.
 
