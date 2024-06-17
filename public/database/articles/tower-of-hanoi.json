@@ -3,5 +3,6 @@
     "image": "/img/articles/tower-of-hanoi/tower-of-hanoi.svg",
     "content": "tower-of-hanoi.md",
     "category": "algorithm",
+    "description": "Discover the elegance of the Tower of Hanoi algorithm implemented in Go (Golang). Explore step-by-step insights and code examples to master this classic problem-solving technique efficiently.",
     "createdAt": "2024-04-27T00:00:00.000Z"
 }

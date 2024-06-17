@@ -6,6 +6,7 @@ type OutputFindArticleBySlugDto = {
     slug: string;
     image: string;
     content: string;
+    description: string;
 } | null;
 
 const getContent = (filename: string) => {

@@ -1,6 +1,11 @@
 import { AboutHeader } from '@/components/about/header';
 import { Link } from '@/shared/components/Link';
 import { Paragraph } from '@/shared/components/paragraph';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'About'
+}
 
 export default function About() {
     return (

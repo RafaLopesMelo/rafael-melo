@@ -1,0 +1,8 @@
+{
+    "title": "DDD in Go - The foundation",
+    "image": "/img/articles/ddd-in-go-foundation/ddd-in-go-foundation.svg",
+    "content": "ddd-in-go-foundation.md",
+    "category": "Go",
+    "description": "Learn how to implement Domain-Driven Design (DDD) entities, value objects, and repositories in Go (Golang). Gain practical insights and code examples to streamline your application's architecture and enhance scalability.",
+    "createdAt": "2024-06-17T00:00:00.000Z"
+}
