@@ -30,7 +30,7 @@ export const MarkdownDisplay = ({ content }: MarkdownDisplayProps) => {
                     <Paragraph className="text-pretty" {...props} />
                 ),
                 a: ({ href, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
-                    <Link href={href as string} className="text-pretty" {...props} />
+                    <Link target="_blank" href={href as string} className="text-pretty" {...props} />
                 ),
                 h1: (props: React.HtmlHTMLAttributes<HTMLHeadingElement>) => (
                     <Heading

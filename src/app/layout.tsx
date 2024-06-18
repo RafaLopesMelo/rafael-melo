@@ -8,7 +8,10 @@ export const metadata: Metadata = {
         template: '%s | Rafael Melo',
         default: 'Rafael Melo'
     },
-    description: 'Full-stack software engineer specialized in back-end development, proficient in NodeJS, React/NextJS, and PHP'
+    description: 'Full-stack software engineer specialized in back-end development, proficient in NodeJS, React/NextJS, and PHP',
+    alternates: {
+        canonical: 'https://rafamelo.dev.br'
+    }
 };
 
 export default function RootLayout({
