@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import './globals.css';
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
         template: '%s | Rafael Melo',
         default: 'Rafael Melo'
     },
-    description: 'full-stack software engineer specialized in back-end development, proficient in NodeJS, React/NextJS, and PHP'
+    description: 'Full-stack software engineer specialized in back-end development, proficient in NodeJS, React/NextJS, and PHP'
 };
 
 export default function RootLayout({
@@ -18,6 +19,7 @@ export default function RootLayout({
     return (
         <html lang="pt-br">
             <body className="dark">{children}</body>
+            <GoogleAnalytics gaId='G-ZCS2CQGSGQ' />
         </html>
     );
 }
