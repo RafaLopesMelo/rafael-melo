@@ -1,5 +1,10 @@
 import { ComingSoon } from '@/shared/components/coming-soon';
 import { Heading } from '@/shared/components/heading';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Projects'
+}
 
 export default function Projects() {
     return (

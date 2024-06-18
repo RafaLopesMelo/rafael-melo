@@ -17,7 +17,7 @@ export const LastArticles = async () => {
                     What I&apos;ve been writing
                 </Paragraph>
             </div>
-            <div className="grid md:grid-cols-4">
+            <div className="grid md:grid-cols-4 gap-6">
                 {articles.data.slice(0, 3).map((article) => (
                     <ArticleItem key={article.slug} article={article} />
                 ))}

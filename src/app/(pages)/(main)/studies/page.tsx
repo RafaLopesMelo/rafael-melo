@@ -1,6 +1,11 @@
 import { StudyItem } from '@/components/studies/item';
 import { Heading } from '@/shared/components/heading';
 import { ListStudies } from '@/shared/services/studies/list';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Studies'
+}
 
 export default async function Studies() {
     const studies = await ListStudies();
