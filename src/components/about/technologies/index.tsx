@@ -1,3 +1,5 @@
+import ExportedImage from "next-image-export-optimizer";
+
 const icons: { title: string; icon: string }[] = [
     {
         icon: '/img/technologies/javascript.svg',
@@ -59,7 +61,7 @@ export const Technologies = () => {
                         title={icon.title}
                         className="rounded-md aspect-square p-2 flex flex-col items-center justify-center"
                     >
-                        <img src={icon.icon} className="w-8 h-8" />
+                        <ExportedImage src={icon.icon} alt={icon.title} className="w-8 h-8" />
                         <h5 className="text-sm text-center text-main-400 mt-2">
                             {icon.title}
                         </h5>

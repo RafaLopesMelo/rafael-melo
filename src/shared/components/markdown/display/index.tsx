@@ -15,6 +15,7 @@ import { Blockquote } from '../../blockquote';
 import { ListItem, OrderedList, UnorderedList } from '../../list';
 import { Table } from '../../table';
 import { Link } from '../../Link';
+import ExportedImage from 'next-image-export-optimizer';
 
 type MarkdownDisplayProps = {
     content: string;
@@ -69,10 +70,13 @@ export const MarkdownDisplay = ({ content }: MarkdownDisplayProps) => {
                     <UnorderedList className="mb-6" {...props} />
                 ),
                 img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
-                    <img
+                    <ExportedImage
                         className="w-full h-auto my-6"
                         {...props}
                         alt={props.alt || ''}
+                        src={props.src || ''}
+                        width={props.width ? Number(props.width) : undefined}
+                        height={props.height ? Number(props.height) : undefined}
                     />
                 ),
                 table: (props: React.HTMLAttributes<HTMLTableElement>) => (

@@ -6,6 +6,7 @@ import { MarkdownDisplay } from '@/shared/components/markdown/display';
 import { GithubSocial } from '@/shared/components/socials/github';
 import { LinkedinSocial } from '@/shared/components/socials/linkedin';
 import { motion } from 'framer-motion';
+import ExportedImage from 'next-image-export-optimizer';
 
 type ArticleDisplayProps = {
     article: {
@@ -55,7 +56,7 @@ export const ArticleDisplay = ({ article }: ArticleDisplayProps) => {
                     className="w-48 mx-auto pb-5 lg:pb-10 drop-shadow-[0_25px_25px_rgba(255,255,255,0.15)]"
                     delay={50}
                 >
-                    <img src={article.image} />
+                    <ExportedImage src={article.image} alt={article.title} />
                 </AnimatedDiv>
                 <AnimatedDiv delay={150} className="flex flex-col items-center">
                     <Heading

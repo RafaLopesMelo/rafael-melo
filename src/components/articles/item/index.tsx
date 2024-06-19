@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Heading } from '@/shared/components/heading';
 import { Paragraph } from '@/shared/components/paragraph';
 import { Text } from '@/shared/components/text';
+import ExportedImage from 'next-image-export-optimizer';
 
 type ArticleItemProps = {
     article: {
@@ -20,7 +21,7 @@ export const ArticleItem = ({ article }: ArticleItemProps) => {
             <Link href={`/articles/${article.slug}`}>
                 <figure className="aspect-square flex items-center justify-center overflow-hidden rounded-xl from-transparent to-zinc-800 bg-gradient-to-t group">
                     <div className="w-48  drop-shadow-[0_20px_13px_rgba(255,255,255,0.1)] transition group-hover:scale-110 group-hover:drop-shadow-[0_25px_25px_rgba(255,255,255,0.15)] group-hover:-translate-y-3">
-                        <img src={article.image} />
+                        <ExportedImage src={article.image} alt={article.title} />
                     </div>
                 </figure>
             </Link>
