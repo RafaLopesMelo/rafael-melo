@@ -1,7 +1,6 @@
-import ExportedImage from 'next-image-export-optimizer';
-
 import { Technologies } from '@/components/about/technologies';
 import { Heading } from '@/shared/components/heading';
+import { Image } from '@/shared/components/image';
 import { Paragraph } from '@/shared/components/paragraph';
 
 export const AboutHeader = () => {
@@ -22,10 +21,10 @@ export const AboutHeader = () => {
                 </div>
             </div>
             <div className="lg:px-20">
-                <ExportedImage
+                <Image
                     src="/img/me_2.webp"
                     alt="Rafael Melo"
-                    className="w-60 h-60 md:w-80 md:h-80 rounded-full"
+                    className="rounded-full w-60 h-60 md:w-80 md:h-80"
                 />
             </div>
         </div>
