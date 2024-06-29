@@ -2,10 +2,6 @@ import { Image } from "@/shared/components/image";
 
 const icons: { title: string; icon: string }[] = [
     {
-        icon: '/img/technologies/javascript.svg',
-        title: 'JavaScript'
-    },
-    {
         icon: '/img/technologies/typescript.svg',
         title: 'TypeScript'
     },
@@ -18,12 +14,8 @@ const icons: { title: string; icon: string }[] = [
         title: 'NodeJS'
     },
     {
-        icon: '/img/technologies/php.svg',
-        title: 'PHP'
-    },
-    {
-        icon: '/img/technologies/python.svg',
-        title: 'Python'
+        icon: '/img/technologies/go.svg',
+        title: 'Go'
     },
     {
         icon: '/img/technologies/mongodb.svg',
@@ -34,8 +26,8 @@ const icons: { title: string; icon: string }[] = [
         title: 'RabbitMQ'
     },
     {
-        icon: '/img/technologies/mysql.svg',
-        title: 'MySql'
+        icon: '/img/technologies/postgresql.svg',
+        title: 'PostgreSQL'
     },
     {
         icon: '/img/technologies/docker.svg',
@@ -54,7 +46,7 @@ const icons: { title: string; icon: string }[] = [
 export const Technologies = () => {
     return (
         <div className="w-full max-w-[520px] rounded bg-main-400/[0.03] p-3">
-            <div className="grid grid-cols-4 md:grid-cols-6 gap-4">
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
                 {icons.map((icon, index) => (
                     <div
                         key={index}

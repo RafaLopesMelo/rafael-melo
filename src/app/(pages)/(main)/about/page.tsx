@@ -16,7 +16,7 @@ export default function About() {
                 <Paragraph>
                     Hi, I&apos;m Rafael Melo, a full-stack software engineer
                     specialized in back-end development, proficient in NodeJS,
-                    React/NextJS, and PHP.
+                    React/NextJS, and Go.
                 </Paragraph>
 
                 <Paragraph>
@@ -29,7 +29,7 @@ export default function About() {
                     their content to their students.
                     <br />
                     Within this startup environment, I&apos;ve engaged with
-                    various technologies, including NodeJS and PHP for back-end
+                    various technologies, including NodeJS and Go for back-end
                     operations, as well as ReactJS and NextJS for front-end
                     development. Additionally, I&apos;ve utilized DevOps tools
                     like Docker and AWS.
